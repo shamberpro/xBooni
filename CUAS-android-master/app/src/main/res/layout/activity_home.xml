@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+    //android:name="com.google.android.gms.maps.SupportMapFragment"
+    <fragment
+        android:id="@+id/google_map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/txt_azimuth"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/google_map"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/advent_pro_light"
+        android:gravity="center"
+        android:text="Bearing"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/txt_latlng"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/google_map"
+        android:layout_toRightOf="@id/txt_azimuth"
+        android:fontFamily="@font/advent_pro_light"
+        android:gravity="center"
+        android:text="LatLng"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/txt_azimuth"
+        android:layout_alignParentStart="true"
+        android:fontFamily="@font/advent_pro_light"
+        android:gravity="center"
+        android:text="1. Please enter the following information."
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/altitudeTextView"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/info"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/advent_pro_light"
+        android:gravity="center"
+        android:text="Altitude:"
+        android:textColor="#000"
+        android:textSize="15dp" />
+
+    <Spinner
+        android:id="@+id/altitudeSpinner"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/info"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/altitudeTextView"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/colorTextView"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/altitudeTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/advent_pro_light"
+        android:gravity="center"
+        android:text="Colour:"
+        android:textColor="#000"
+        android:textSize="15dp" />
+
+    <Spinner
+        android:id="@+id/colorSpinner"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/altitudeSpinner"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/colorTextView"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/speedTextView"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/colorTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/advent_pro_light"
+        android:gravity="center"
+        android:text="Speed:"
+        android:textColor="#000"
+        android:textSize="15dp" />
+
+    <Spinner
+        android:id="@+id/speedSpinner"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/colorSpinner"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/speedTextView"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/payloadTextView"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/info"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/altitudeSpinner"
+        android:fontFamily="@font/advent_pro_light"
+        android:gravity="center"
+        android:text="Payload:"
+        android:textColor="#000"
+        android:textSize="15dp"/>
+
+    <Spinner
+        android:id="@+id/payloadSpinner"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/info"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/payloadTextView"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/lightTextView"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/payloadTextView"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/colorSpinner"
+        android:fontFamily="@font/advent_pro_light"
+        android:gravity="center"
+        android:text="Light:"
+        android:textColor="#000"
+        android:textSize="15dp" />
+
+    <Spinner
+        android:id="@+id/lightSpinner"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/payloadSpinner"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/lightTextView"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/landmarkTextView"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/lightTextView"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/speedSpinner"
+        android:fontFamily="@font/advent_pro_light"
+        android:gravity="center"
+        android:text="Landmark:"
+        android:textColor="#000"
+        android:textSize="15dp" />
+
+    <Spinner
+        android:id="@+id/landmarkSpinner"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/lightSpinner"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/landmarkTextView"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/PointDrone"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/speedTextView"
+        android:layout_alignParentStart="true"
+        android:fontFamily="@font/advent_pro_light"
+        android:gravity="center"
+        android:text="2. Point the top of your phone to the direction of the drone."
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/submit_info"
+        android:layout_width="350sp"
+        android:layout_height="40dp"
+        android:layout_below="@id/PointDrone"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/mybutton"
+        android:fontFamily="@font/advent_pro_light"
+        android:onClick="saveInfo"
+        android:text="Submit"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff" />
+
+    //Logout Button
+    <Button
+        android:id="@+id/LogoutButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/submit_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/mybutton"
+        android:fontFamily="@font/advent_pro_light"
+        android:gravity="center"
+        android:text="Logout"
+        android:textColor="#ffffff" />
+
+        
+</RelativeLayout>

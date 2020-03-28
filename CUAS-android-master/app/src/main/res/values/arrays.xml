@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="altitude_array">
+        <item>Unsure</item>
+        <item>25 meters</item>
+        <item>50 meters</item>
+        <item>75 meters</item>
+        <item>100 meters</item>
+    </string-array>
+
+    <string-array name="color_array">
+        <item>Unsure</item>
+        <item>White</item>
+        <item>Black</item>
+        <item>Gray</item>
+        <item>Red</item>
+        <item>Blue</item>
+        <item>Green</item>
+        <item>Purple</item>
+        <item>Pink</item>
+        <item>Orange</item>
+        <item>Yellow</item>
+        <item>Teal</item>
+    </string-array>
+
+    <string-array name="speed_array">
+        <item>Unsure</item>
+        <item>Stationary</item>
+        <item>Fast</item>
+        <item>Normal</item>
+        <item>Slow</item>
+    </string-array>
+
+    <string-array name="payload_array">
+        <item>Unsure</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="light_array">
+        <item>Unsure</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="landmark_array">
+        <item>Unsure</item>
+        <item>AV1</item>
+        <item>AV2</item>
+        <item>AIS</item>
+        <item>Batt Bay</item>
+        <item>P Bldg</item>
+        <item>T-Cell</item>
+        <item>B-Pan</item>
+        <item>S Bldg</item>
+        <item>M Office</item>
+        <item>M Shed</item>
+        <item>DT Bay</item>
+        <item>AW Bldg</item>
+        <item>Loop (Indoors)</item>
+        <item>Loop (Outdoors)</item>
+        <item>H1/H2</item>
+        <item>H4</item>
+        <item>D8</item>
+        <item>D9</item>
+        <item>Castle</item>
+        <item>Woodpeckers Bldg</item>
+        <item>Cookhouse</item>
+        <item>Hotshot V</item>
+        <item>7xx Bldg/MT Line</item>
+        <item>SD</item>
+        <item>Outbase</item>
+        <item>PL Mushroom Counter</item>
+        <item>PL JAE</item>
+        <item>Others</item>
+    </string-array>
+
+</resources>

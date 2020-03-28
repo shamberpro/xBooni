@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "301941042591",
+    "firebase_url": "https://rsaf-swiftoffice-cuas-dev.firebaseio.com",
+    "project_id": "rsaf-swiftoffice-cuas-dev",
+    "storage_bucket": "rsaf-swiftoffice-cuas-dev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:301941042591:android:d9e67dff9f8380096e61aa",
+        "android_client_info": {
+          "package_name": "com.swiftoffice.cuas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "301941042591-4bdropi4159cu1qeejdpb6l2qhoa33jp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.swiftoffice.cuas",
+            "certificate_hash": "521de3d674655d7807cc7548df600d6667890f0e"
+          }
+        },
+        {
+          "client_id": "301941042591-tbbupcu9vdfg9v63ta2iluqnnin1oblk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.swiftoffice.cuas",
+            "certificate_hash": "b5e640dcbb97307107f76ca1ad1f9d76cd5905ad"
+          }
+        },
+        {
+          "client_id": "301941042591-8cqkbgr0obicm48ki54qi7a4jgfleonb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfCz4jW87CSROtn8sfK4dIW4auPh16Csk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "301941042591-8cqkbgr0obicm48ki54qi7a4jgfleonb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
